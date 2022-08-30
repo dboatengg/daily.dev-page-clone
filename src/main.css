@@ -1,3 +1,67 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+/* navbar */
+.hamburger {
+  width: 40px;
+  height: 40px;
+  max-height: 100%;
+  max-width: 100%;
+  display: none;
+}
+.nav-link:hover {
+  color: white;
+}
+
+@media only screen and (max-width: 440px) {
+  .nav-btn {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .hamburger {
+    display: block;
+    cursor: pointer;
+    border-radius: 9px;
+    background-color: transparent;
+  }
+  .nav-menu {
+    display: none;
+    position: absolute;
+    flex-direction: column;
+    top: 100px;
+    z-index: 99;
+    align-items: flex-start;
+    right: 10px;
+    max-width: 280px;
+    width: 100%;
+    background-color: #25282c;
+    border-radius: 16px;
+    gap: 0;
+  }
+  .nav-menu.active {
+    display: block;
+  }
+  .nav-link {
+    display: block;
+    justify-content: center;
+    padding: 24px;
+    font-size: 18px;
+    line-height: 24px;
+    letter-spacing: 1.6px;
+    transition: 0.2s ease-in-out;
+    letter-spacing: 1.6px;
+  }
+
+  .nav-link:not(:last-child) {
+    border-bottom: 1px solid #151618;
+    width: 100%;
+  }
+}
+@media only screen and (max-width: 1000px) {
+  .nav-btn-span {
+    display: none;
+  }
+}

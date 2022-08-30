@@ -3,6 +3,7 @@ module.exports = {
   content: ["./*.html"],
   theme: {
     colors: {
+      transparent: "transparent",
       background: "#0e1217",
       "scroll-background": "hsla(0, 0%, 86.7%, 0)",
       "white-color": "#fff",
