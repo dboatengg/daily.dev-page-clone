@@ -3,7 +3,7 @@
 # daily.dev page clone
 This is a cloned website project of the landing page of daily.dev.
 
-Steps to execute this project
+## Steps to execute this project
 - Download the entire code.
 - Open up the `index.html`.
 
