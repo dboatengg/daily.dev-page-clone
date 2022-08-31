@@ -3,6 +3,10 @@
 @tailwind utilities;
 
 /* navbar */
+body {
+  max-width: 1600px;
+  margin: auto;
+}
 .hamburger {
   width: 40px;
   height: 40px;
@@ -63,5 +67,25 @@
 @media only screen and (max-width: 1000px) {
   .nav-btn-span {
     display: none;
+  }
+}
+
+/* hero */
+.play {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-image: linear-gradient(90deg, #f5005e, #4801f5);
+  box-shadow: 0 16px 24px 0 #000;
+}
+.play:hover {
+  background-image: linear-gradient(90deg, #f5005e, #f5005e);
+}
+
+@media only screen and (max-width: 1023px) {
+  #hero {
+    max-width: 520px;
+    margin: auto;
   }
 }

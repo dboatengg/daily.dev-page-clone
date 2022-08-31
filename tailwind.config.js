@@ -14,6 +14,7 @@ module.exports = {
       "gradient-red": "#f5005e",
       "gradient-blue": "#4801f5",
       green: "#00f576",
+      "border-color": "#525866",
     },
     extend: {},
   },
