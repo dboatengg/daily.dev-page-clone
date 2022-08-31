@@ -17,6 +17,7 @@ hamburger.addEventListener("click", () => {
 //remove nav-menu when user clicks on main section
 main.addEventListener("click", () => {
   navMenu.classList.remove("active");
+  hamburger.style.backgroundColor = "transparent";
 });
 
 // play video
