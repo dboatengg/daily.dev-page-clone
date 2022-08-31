@@ -555,15 +555,15 @@ video {
   width: 100%;
 }
 
-@media (min-width: 640px) {
+@media (min-width: 480px) {
   .container {
-    max-width: 640px;
+    max-width: 480px;
   }
 }
 
-@media (min-width: 768px) {
+@media (min-width: 640px) {
   .container {
-    max-width: 768px;
+    max-width: 640px;
   }
 }
 
@@ -576,12 +576,6 @@ video {
 @media (min-width: 1280px) {
   .container {
     max-width: 1280px;
-  }
-}
-
-@media (min-width: 1536px) {
-  .container {
-    max-width: 1536px;
   }
 }
 
@@ -624,12 +618,20 @@ video {
   margin-left: 10px;
 }
 
+.block {
+  display: block;
+}
+
 .flex {
   display: flex;
 }
 
 .hidden {
   display: none;
+}
+
+.h-\[56px\] {
+  height: 56px;
 }
 
 .h-\[60px\] {
@@ -644,12 +646,12 @@ video {
   width: 100%;
 }
 
-.w-5\/6 {
-  width: 83.333333%;
-}
-
 .w-\[35px\] {
   width: 35px;
+}
+
+.grow {
+  flex-grow: 1;
 }
 
 .flex-col {
@@ -666,10 +668,6 @@ video {
 
 .items-center {
   align-items: center;
-}
-
-.justify-center {
-  justify-content: center;
 }
 
 .justify-between {
@@ -747,9 +745,14 @@ video {
   padding-bottom: 12px;
 }
 
-.px-\[26px\] {
-  padding-left: 26px;
-  padding-right: 26px;
+.px-\[12px\] {
+  padding-left: 12px;
+  padding-right: 12px;
+}
+
+.py-\[8px\] {
+  padding-top: 8px;
+  padding-bottom: 8px;
 }
 
 .px-\[24px\] {
@@ -757,16 +760,16 @@ video {
   padding-right: 24px;
 }
 
-.pt-\[120px\] {
-  padding-top: 120px;
+.pt-\[40px\] {
+  padding-top: 40px;
 }
 
 .text-\[16px\] {
   font-size: 16px;
 }
 
-.text-\[48px\] {
-  font-size: 48px;
+.text-\[32px\] {
+  font-size: 32px;
 }
 
 .text-\[18px\] {
@@ -785,12 +788,16 @@ video {
   font-weight: 700;
 }
 
-.font-normal {
-  font-weight: 400;
+.font-light {
+  font-weight: 300;
 }
 
-.leading-\[56px\] {
-  line-height: 56px;
+.font-extrabold {
+  font-weight: 800;
+}
+
+.font-normal {
+  font-weight: 400;
 }
 
 .text-body-text {
@@ -912,6 +919,13 @@ body {
   }
 }
 
+@media only screen and (max-width: 330px) {
+  .hero-btn {
+    width: 100%;
+    font-size: 16px;
+  }
+}
+
 .hover\:bg-transparent:hover {
   background-color: transparent;
 }
@@ -930,13 +944,23 @@ body {
           text-decoration-line: underline;
 }
 
-@media (min-width: 768px) {
-  .md\:block {
+@media (min-width: 480px) {
+  .xsm\:block {
     display: block;
   }
 
-  .md\:gap-0 {
-    gap: 0px;
+  .xsm\:hidden {
+    display: none;
+  }
+}
+
+@media (min-width: 1024px) {
+  .md\:cursor-pointer {
+    cursor: pointer;
+  }
+
+  .md\:flex-row {
+    flex-direction: row;
   }
 
   .md\:px-\[24px\] {
@@ -948,22 +972,48 @@ body {
     padding-top: 16px;
     padding-bottom: 16px;
   }
+
+  .md\:px-\[26px\] {
+    padding-left: 26px;
+    padding-right: 26px;
+  }
+
+  .md\:py-\[20px\] {
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+
+  .md\:pt-\[120px\] {
+    padding-top: 120px;
+  }
+
+  .md\:text-\[48px\] {
+    font-size: 48px;
+  }
+
+  .md\:leading-\[40px\] {
+    line-height: 40px;
+  }
+
+  .md\:leading-\[56px\] {
+    line-height: 56px;
+  }
 }
 
-@media (min-width: 1024px) {
+@media (min-width: 1280px) {
   .lg\:container {
     width: 100%;
+  }
+
+  @media (min-width: 480px) {
+    .lg\:container {
+      max-width: 480px;
+    }
   }
 
   @media (min-width: 640px) {
     .lg\:container {
       max-width: 640px;
-    }
-  }
-
-  @media (min-width: 768px) {
-    .lg\:container {
-      max-width: 768px;
     }
   }
 
@@ -979,26 +1029,12 @@ body {
     }
   }
 
-  @media (min-width: 1536px) {
-    .lg\:container {
-      max-width: 1536px;
-    }
-  }
-
   .lg\:inline {
     display: inline;
   }
 
-  .lg\:w-1\/2 {
-    width: 50%;
-  }
-
   .lg\:w-\[45\%\] {
     width: 45%;
-  }
-
-  .lg\:w-5\/6 {
-    width: 83.333333%;
   }
 
   .lg\:flex-row {

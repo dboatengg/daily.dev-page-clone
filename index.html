@@ -4,13 +4,17 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>daily dev page clone</title>
+    <title>daily.dev | Where developer grow together</title>
 
     <!-- CSS file  -->
     <link rel="stylesheet" href="dist/output.css" />
 
     <!-- favicon -->
-    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+    <link
+      rel="shortcut icon"
+      href="images/png/favicon.png"
+      type="image/x-icon"
+    />
 
     <!-- font awesome -->
     <!-- <link
@@ -55,54 +59,69 @@
         </div>
       </nav>
     </header>
-    <main class="main w-11/12 mx-auto pt-[120px]">
+    <main
+      class="main w-11/12 lg:container mx-auto pt-[40px] md:pt-[120px] px-[12px]"
+    >
       <!-- hero section -->
       <section id="hero">
         <!-- flex container -->
         <div
-          class="flex flex-col-reverse lg:flex-row items-center justify-between w-full gap-y-[40px] lg:gap-0"
+          class="flex flex-col-reverse md:flex-row items-center justify-between w-full gap-y-[40px] lg:gap-0"
         >
           <!-- left item -->
           <div class="flex flex-col items-start lg:w-[45%]">
-            <h1 class="text-[48px] leading-[56px] font-bold text-white-color">
+            <h1
+              class="text-[32px] md:leading-[40px] md:text-[48px] md:leading-[56px] font-bold text-white-color"
+            >
               ALL DEVELOPER NEWS IN ONE PLACE
             </h1>
-            <p class="my-[40px] text-[18px]">
+            <p class="my-[40px] text-[18px] font-light">
               Get a feed of the best developer news out there! Read more quality
               articles. Stay up to date.
             </p>
             <a
               href=""
-              class="flex items-center bg-white-color hover:bg-opacity-80 px-[26px] py-[20px] rounded-[16px] text-[20px]"
+              class="hero-btn flex items-center bg-white-color hover:bg-opacity-80 px-[20px] py-[8px] md:px-[26px] md:py-[20px] rounded-[16px] text-[20px] h-[56px]"
             >
-              <img class="w-[35px]" src="images/svg/icon-edge.svg" alt="" />
               <img
-                class="ml-[-20px] w-[35px]"
+                class="w-[35px] hidden xsm:block"
+                src="images/svg/icon-edge.svg"
+                alt=""
+              />
+              <img
+                class="ml-[-20px] w-[35px] hidden xsm:block"
                 src="images/svg/icon-firefox-sm.svg"
                 alt=""
               />
               <img
-                class="ml-[-20px] w-[35px]"
+                class="ml-[-20px] w-[35px] hidden xsm:block"
                 src="images/svg/icon-chrome.svg"
                 alt=""
               />
               <div
-                class="flex items-center gap-2 ml-[10px] text-button-color font-bold"
+                class="flex items-center gap-2 ml-[10px] text-button-color font-extrabold"
               >
-                <p>ADD TO CHROME</p>
+                <p>
+                  <span class="hidden xsm:block">ADD TO CHROME</span>
+                  <span class="block xsm:hidden">START NOW</span>
+                </p>
                 <span class="opacity-75 font-normal">- IT'S FREE</span>
               </div>
             </a>
-            <a
-              class="font-semibold hover:underline hover:text-white-color my-[16px]"
-              href="#"
-              >Or try the web version instead</a
-            >
+            <p class="my-[16px] md:cursor-pointer" href="#">
+              <a
+                class="font-semibold hover:underline hover:text-white-color hidden xsm:block"
+                >Or try the web version instead</a
+              >
+              <span class="block text-body-text xsm:hidden font-light"
+                >No signup needed</span
+              >
+            </p>
           </div>
 
           <!-- right item  -->
           <div
-            class="relative border border-border-color hidden md:block rounded-md lg:w-[45%]"
+            class="relative border border-border-color hidden xsm:block rounded-md lg:w-[45%]"
           >
             <a
               href=""

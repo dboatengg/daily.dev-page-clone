@@ -89,3 +89,9 @@ body {
     margin: auto;
   }
 }
+@media only screen and (max-width: 330px) {
+  .hero-btn {
+    width: 100%;
+    font-size: 16px;
+  }
+}

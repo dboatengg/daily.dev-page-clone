@@ -16,6 +16,12 @@ module.exports = {
       green: "#00f576",
       "border-color": "#525866",
     },
+    screens: {
+      xsm: "480px", //extra small mobile
+      sm: "640px", // small - tablet
+      md: "1024px", //medium - laptop
+      lg: "1280px", //large - desktop
+    },
     extend: {},
   },
   plugins: [],

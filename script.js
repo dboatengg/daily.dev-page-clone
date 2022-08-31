@@ -1,6 +1,7 @@
-const hamburger = document.querySelector(".hamburger");
-const navMenu = document.querySelector(".nav-menu");
-const main = document.querySelector(".main");
+const hamburger = document.querySelector(".hamburger"),
+  navMenu = document.querySelector(".nav-menu"),
+  main = document.querySelector(".main"),
+  playBtn = document.querySelector(".play");
 
 hamburger.addEventListener("click", () => {
   // toggle display of hamburger
@@ -13,7 +14,9 @@ hamburger.addEventListener("click", () => {
     hamburger.style.backgroundColor = "grey";
   }
 });
-
+//remove nav-menu when user clicks on main section
 main.addEventListener("click", () => {
   navMenu.classList.remove("active");
 });
+
+// play video
