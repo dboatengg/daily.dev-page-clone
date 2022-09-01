@@ -5,6 +5,7 @@ module.exports = {
     colors: {
       transparent: "transparent",
       background: "#0e1217",
+      "scroll-background-one": "#0c0f14",
       "scroll-background": "hsla(0, 0%, 86.7%, 0)",
       "white-color": "#fff",
       "button-color": "#151618",

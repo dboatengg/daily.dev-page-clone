@@ -587,6 +587,34 @@ video {
   position: relative;
 }
 
+.top-\[24\%\] {
+  top: 24%;
+}
+
+.left-\[40\%\] {
+  left: 40%;
+}
+
+.top-0 {
+  top: 0px;
+}
+
+.top-\[16\%\] {
+  top: 16%;
+}
+
+.left-\[48\%\] {
+  left: 48%;
+}
+
+.left-\[55\%\] {
+  left: 55%;
+}
+
+.left-\[50\%\] {
+  left: 50%;
+}
+
 .z-10 {
   z-index: 10;
 }
@@ -675,12 +703,20 @@ video {
   width: 30px;
 }
 
-.w-\[100px\] {
-  width: 100px;
-}
-
 .w-\[80px\] {
   width: 80px;
+}
+
+.max-w-\[80\%\] {
+  max-width: 80%;
+}
+
+.max-w-\[45\%\] {
+  max-width: 45%;
+}
+
+.max-w-\[30\%\] {
+  max-width: 30%;
 }
 
 .grow {
@@ -735,6 +771,14 @@ video {
   gap: 16px;
 }
 
+.gap-7 {
+  gap: 1.75rem;
+}
+
+.gap-6 {
+  gap: 1.5rem;
+}
+
 .gap-y-\[40px\] {
   row-gap: 40px;
 }
@@ -746,6 +790,14 @@ video {
 .gap-x-2 {
   -moz-column-gap: 0.5rem;
        column-gap: 0.5rem;
+}
+
+.gap-y-\[30px\] {
+  row-gap: 30px;
+}
+
+.gap-y-\[64px\] {
+  row-gap: 64px;
 }
 
 .space-y-5 > :not([hidden]) ~ :not([hidden]) {
@@ -913,6 +965,15 @@ video {
   font-size: 24px;
 }
 
+.text-5xl {
+  font-size: 3rem;
+  line-height: 1;
+}
+
+.text-\[40px\] {
+  font-size: 40px;
+}
+
 .font-semibold {
   font-weight: 600;
 }
@@ -931,6 +992,10 @@ video {
 
 .font-normal {
   font-weight: 400;
+}
+
+.leading-\[28px\] {
+  line-height: 28px;
 }
 
 .tracking-\[6px\] {
@@ -974,6 +1039,10 @@ video {
 body {
   max-width: 1600px;
   margin: auto;
+}
+
+#nav {
+  z-index: 99999;
 }
 
 .hamburger {
@@ -1060,7 +1129,8 @@ body {
 
 @media only screen and (max-width: 1023px) {
   #hero,
-  #value {
+  #value,
+  .cover-one-left {
     max-width: 560px;
     margin: auto;
   }
@@ -1122,9 +1192,22 @@ body {
 }
 
 @media (min-width: 1024px) {
+  .md\:left-\[24px\] {
+    left: 24px;
+  }
+
   .md\:mx-0 {
     margin-left: 0px;
     margin-right: 0px;
+  }
+
+  .md\:mx-auto {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .md\:w-4\/5 {
+    width: 80%;
   }
 
   .md\:max-w-\[480px\] {
@@ -1141,6 +1224,10 @@ body {
 
   .md\:items-start {
     align-items: flex-start;
+  }
+
+  .md\:gap-6 {
+    gap: 1.5rem;
   }
 
   .md\:gap-x-\[40px\] {
@@ -1195,6 +1282,10 @@ body {
 
   .md\:leading-\[56px\] {
     line-height: 56px;
+  }
+
+  .md\:leading-\[36px\] {
+    line-height: 36px;
   }
 }
 

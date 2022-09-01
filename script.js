@@ -1,7 +1,26 @@
 const hamburger = document.querySelector(".hamburger"),
   navMenu = document.querySelector(".nav-menu"),
   main = document.querySelector(".main"),
-  playBtn = document.querySelector(".play");
+  playBtn = document.querySelector(".play"),
+  navBar = document.querySelector("#nav");
+
+// detect scroll on website
+window.onscroll = function () {
+  var distanceScrolled = document.documentElement.scrollTop;
+  if (distanceScrolled > 10) {
+    navBar.style.position = "fixed";
+    navBar.style.width = "100%";
+    navBar.style.backgroundColor = "#0c0f14";
+  }
+  if (distanceScrolled > 100) {
+    navBar.style.position = "fixed";
+    navBar.style.width = "100%";
+    navBar.style.backgroundColor = "#17191f";
+  } else {
+    navBar.style.position = "auto";
+    navBar.style.backgroundColor = "#0e1217";
+  }
+};
 
 hamburger.addEventListener("click", () => {
   // toggle display of hamburger
