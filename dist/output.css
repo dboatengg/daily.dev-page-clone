@@ -610,6 +610,11 @@ video {
   margin-bottom: 16px;
 }
 
+.my-\[80px\] {
+  margin-top: 80px;
+  margin-bottom: 80px;
+}
+
 .ml-\[-20px\] {
   margin-left: -20px;
 }
@@ -666,16 +671,16 @@ video {
   width: 38px;
 }
 
-.w-\[20px\] {
-  width: 20px;
-}
-
 .w-\[30px\] {
   width: 30px;
 }
 
-.max-w-\[480px\] {
-  max-width: 480px;
+.w-\[100px\] {
+  width: 100px;
+}
+
+.w-\[80px\] {
+  width: 80px;
 }
 
 .grow {
@@ -726,6 +731,10 @@ video {
   gap: 1rem;
 }
 
+.gap-\[16px\] {
+  gap: 16px;
+}
+
 .gap-y-\[40px\] {
   row-gap: 40px;
 }
@@ -737,11 +746,6 @@ video {
 .gap-x-2 {
   -moz-column-gap: 0.5rem;
        column-gap: 0.5rem;
-}
-
-.gap-x-\[40px\] {
-  -moz-column-gap: 40px;
-       column-gap: 40px;
 }
 
 .space-y-5 > :not([hidden]) ~ :not([hidden]) {
@@ -766,20 +770,12 @@ video {
   border-radius: 30px;
 }
 
-.rounded-full {
-  border-radius: 9999px;
+.rounded-\[15px\] {
+  border-radius: 15px;
 }
 
 .rounded-lg {
   border-radius: 0.5rem;
-}
-
-.rounded-\[10px\] {
-  border-radius: 10px;
-}
-
-.rounded-\[15px\] {
-  border-radius: 15px;
 }
 
 .border {
@@ -814,14 +810,6 @@ video {
   background-color: rgba(255,255,255,.04);
 }
 
-.p-2 {
-  padding: 0.5rem;
-}
-
-.p-3 {
-  padding: 0.75rem;
-}
-
 .py-\[20px\] {
   padding-top: 20px;
   padding-bottom: 20px;
@@ -850,31 +838,6 @@ video {
 .px-\[32px\] {
   padding-left: 32px;
   padding-right: 32px;
-}
-
-.px-2 {
-  padding-left: 0.5rem;
-  padding-right: 0.5rem;
-}
-
-.py-1 {
-  padding-top: 0.25rem;
-  padding-bottom: 0.25rem;
-}
-
-.px-\[10px\] {
-  padding-left: 10px;
-  padding-right: 10px;
-}
-
-.py-\[5px\] {
-  padding-top: 5px;
-  padding-bottom: 5px;
-}
-
-.py-\[7px\] {
-  padding-top: 7px;
-  padding-bottom: 7px;
 }
 
 .px-\[15px\] {
@@ -937,11 +900,6 @@ video {
   line-height: 2.25rem;
 }
 
-.text-5xl {
-  font-size: 3rem;
-  line-height: 1;
-}
-
 .text-2xl {
   font-size: 1.5rem;
   line-height: 2rem;
@@ -949,6 +907,10 @@ video {
 
 .text-\[14px\] {
   font-size: 14px;
+}
+
+.text-\[24px\] {
+  font-size: 24px;
 }
 
 .font-semibold {
@@ -1097,8 +1059,9 @@ body {
 }
 
 @media only screen and (max-width: 1023px) {
-  #hero {
-    max-width: 520px;
+  #hero,
+  #value {
+    max-width: 560px;
     margin: auto;
   }
 }
@@ -1176,10 +1139,6 @@ body {
     flex-direction: row;
   }
 
-  .md\:flex-col {
-    flex-direction: column;
-  }
-
   .md\:items-start {
     align-items: flex-start;
   }
@@ -1216,10 +1175,6 @@ body {
     font-size: 48px;
   }
 
-  .md\:text-\[16px\] {
-    font-size: 16px;
-  }
-
   .md\:text-4xl {
     font-size: 2.25rem;
     line-height: 2.5rem;
@@ -1228,6 +1183,10 @@ body {
   .md\:text-5xl {
     font-size: 3rem;
     line-height: 1;
+  }
+
+  .md\:text-\[16px\] {
+    font-size: 16px;
   }
 
   .md\:leading-\[40px\] {
