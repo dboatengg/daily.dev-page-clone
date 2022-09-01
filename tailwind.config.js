@@ -15,6 +15,7 @@ module.exports = {
       "gradient-blue": "#4801f5",
       green: "#00f576",
       "border-color": "#525866",
+      "tag-background": "rgba(255,255,255,.04)",
     },
     screens: {
       xsm: "480px", //extra small mobile
