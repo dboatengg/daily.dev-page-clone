@@ -17,7 +17,8 @@ window.onscroll = function () {
     navBar.style.width = "100%";
     navBar.style.backgroundColor = "#17191f";
   } else {
-    navBar.style.position = "auto";
+    // navBar.style.position = "fixed";
+    navBar.style.position = "static";
     navBar.style.backgroundColor = "#0e1217";
   }
 };

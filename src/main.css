@@ -9,6 +9,7 @@ body {
 }
 #nav {
   z-index: 99999;
+  transition: 0.3s ease-in-out;
 }
 .hamburger {
   width: 40px;
