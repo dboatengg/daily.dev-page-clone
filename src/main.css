@@ -89,7 +89,9 @@ body {
 @media only screen and (max-width: 1023px) {
   #hero,
   #value,
-  .cover-one-left {
+  .cover-one-left,
+  #cta,
+  #cta-2 {
     max-width: 560px;
     margin: auto;
   }
