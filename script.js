@@ -8,17 +8,13 @@ const hamburger = document.querySelector(".hamburger"),
 window.onscroll = function () {
   var distanceScrolled = document.documentElement.scrollTop;
   if (distanceScrolled > 10) {
-    navBar.style.position = "fixed";
-    navBar.style.width = "100%";
     navBar.style.backgroundColor = "#0c0f14";
   }
   if (distanceScrolled > 100) {
-    navBar.style.position = "fixed";
-    navBar.style.width = "100%";
+
     navBar.style.backgroundColor = "#17191f";
   } else {
     // navBar.style.position = "fixed";
-    navBar.style.position = "static";
     navBar.style.backgroundColor = "#0e1217";
   }
 };

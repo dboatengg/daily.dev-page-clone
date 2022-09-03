@@ -19,6 +19,7 @@ module.exports = {
       "tag-background": "rgba(255,255,255,.04)",
     },
     screens: {
+      xxsm: "325px",
       xsm: "480px", //extra small mobile
       sm: "640px", // small - tablet
       md: "1024px", //medium - laptop

@@ -3,10 +3,6 @@
 @tailwind utilities;
 
 /* navbar */
-body {
-  max-width: 1600px;
-  margin: auto;
-}
 #nav {
   z-index: 99999;
   transition: 0.3s ease-in-out;
@@ -20,6 +16,9 @@ body {
 }
 .nav-link:hover {
   color: white;
+}
+#footer {
+  background-color: hsla(0, 0%, 86.7%, 0);
 }
 
 @media only screen and (max-width: 440px) {
