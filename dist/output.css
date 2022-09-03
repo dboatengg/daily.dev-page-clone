@@ -673,6 +673,10 @@ video {
   margin-top: 16px;
 }
 
+.mr-\[40px\] {
+  margin-right: 40px;
+}
+
 .block {
   display: block;
 }
@@ -922,6 +926,16 @@ video {
 .py-\[8px\] {
   padding-top: 8px;
   padding-bottom: 8px;
+}
+
+.px-\[40px\] {
+  padding-left: 40px;
+  padding-right: 40px;
+}
+
+.py-\[20px\] {
+  padding-top: 20px;
+  padding-bottom: 20px;
 }
 
 .pt-\[40px\] {
@@ -1328,6 +1342,10 @@ video {
     margin-right: auto;
   }
 
+  .md\:mr-\[0px\] {
+    margin-right: 0px;
+  }
+
   .md\:w-4\/5 {
     width: 80%;
   }
@@ -1404,6 +1422,10 @@ video {
 
   .md\:pt-\[120px\] {
     padding-top: 120px;
+  }
+
+  .md\:pl-\[40px\] {
+    padding-left: 40px;
   }
 
   .md\:text-start {
