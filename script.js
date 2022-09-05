@@ -4,17 +4,15 @@ const hamburger = document.querySelector(".hamburger"),
   playBtn = document.querySelector(".play"),
   navBar = document.querySelector("#nav");
 
-// detect scroll on website
+// detect scroll on website to change background of navbar
 window.onscroll = function () {
   var distanceScrolled = document.documentElement.scrollTop;
-  if (distanceScrolled > 10) {
-    navBar.style.backgroundColor = "#0c0f14";
-  }
-  if (distanceScrolled > 100) {
-
+  if (distanceScrolled > 5) {
     navBar.style.backgroundColor = "#17191f";
+    navBar.style.position = "fixed";
+    navBar.style.width = "100%";
   } else {
-    // navBar.style.position = "fixed";
+    navBar.style.position = "relative";
     navBar.style.backgroundColor = "#0e1217";
   }
 };
@@ -35,5 +33,3 @@ main.addEventListener("click", () => {
   navMenu.classList.remove("active");
   hamburger.style.backgroundColor = "transparent";
 });
-
-// play video
