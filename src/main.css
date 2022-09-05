@@ -89,7 +89,8 @@
 @media only screen and (max-width: 1023px) {
   #hero,
   #value,
-  .cover-one-left,
+  #cover-one-left,
+  #cover-middle-right,
   #cta,
   #cta-2 {
     max-width: 560px;
