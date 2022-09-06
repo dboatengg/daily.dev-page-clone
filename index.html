@@ -759,7 +759,7 @@
       </section>
     </main>
 
-    <footer id="footer" class="">
+    <footer id="footer" class="w-full">
       <!-- footer  start   -->
       <div
         class="flex flex-col w-10/12 md:container md:px-[50px] mx-auto md:flex-row justify-between pt-[80px] pb-[20px] items-center md:items-start"
@@ -819,11 +819,11 @@
         id="footer-middle"
         class="flex justify-between flex-col md:flex-row gap-y-[20px] items-center w-10/12 md:container mx-auto py-[40px] md:px-[50px]"
       >
-        <div class="text-center">
+        <div class="flex text-center flex-col gap-3">
           <h2 class="text-[20px] text-white-color font-bold">
             COMMUNITY NEWSLETTER
           </h2>
-          <p>Try our newsletter and we'll save your time.</p>
+          <p class="font-light">Try our newsletter and we'll save your time.</p>
         </div>
         <form
           method="POST"
@@ -1019,6 +1019,24 @@
       </div>
       <hr class="text-white-color opacity-[0.08]" />
       <!-- footer end  -->
+      <div
+        class="flex justify-between flex-col md:flex-row gap-y-[20px] items-center w-10/12 md:container mx-auto py-[40px] md:px-[50px]"
+      >
+        <div class="flex items-center gap-5 font-light flex-col sm:flex-row">
+          <div>&copy; 2022 All rights reserved.</div>
+          <div class="flex items-center justify-between gap-2">
+            <a href="#" id="privacy">Privacy</a>
+            <div id="separator">|</div>
+            <a href="#" id="terms">Terms</a>
+          </div>
+        </div>
+        <div class="flex items-center flex-col gap-3">
+          <p class="text-center">
+            We are working remotely wherever we're happiest
+          </p>
+          <div class="text-[28px] text-white-color">🇮🇱 🇮🇹 🇵🇭 🇳🇱 🇬🇧</div>
+        </div>
+      </div>
     </footer>
     <script src="script.js"></script>
   </body>

@@ -19,12 +19,16 @@
 }
 #footer {
   background-color: #17191f;
+  /* width: 100%; */
 }
 input {
   outline: 0;
 }
 #email {
-  border: 1px solid #ccc;
+  border: 1px solid #747579;
+}
+#email:hover {
+  border: 1px solid #fff;
 }
 #email:focus {
   color: white;
@@ -37,13 +41,20 @@ input {
   background-image: linear-gradient(90deg, #ff1f75, #ff1f75);
 }
 
+#separator {
+  width: 1px;
+  /* height: 124px; */
+  /* margin-top: 0; */
+  /* margin-right: 20px; */
+  /* margin-bottom: 0; */
+}
 /* svg  */
 svg {
   width: 30px;
   height: 30px;
 }
 svg path {
-  fill: #a9abb3;
+  fill: #747579;
 }
 svg path:hover {
   fill: #fff;
