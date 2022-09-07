@@ -28,6 +28,17 @@ hamburger.addEventListener("click", () => {
     hamburger.style.backgroundColor = "#ffffff0a";
   }
 });
+
+// close nav-menu when user clicks on a nav item
+const navLink = document.querySelectorAll(".nav-link");
+
+navLink.forEach((n) => n.addEventListener("click", closeMenu));
+
+function closeMenu() {
+  hamburger.classList.remove("active");
+  navMenu.classList.remove("active");
+}
+
 //remove nav-menu when user clicks on main section
 main.addEventListener("click", () => {
   navMenu.classList.remove("active");
