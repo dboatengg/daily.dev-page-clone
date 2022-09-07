@@ -5,7 +5,7 @@
 /* navbar */
 #nav {
   z-index: 99999;
-  transition: 1s ease-in-out;
+  transition: 0.3s ease-in-out;
 }
 .hamburger {
   width: 40px;
@@ -13,13 +13,13 @@
   max-height: 100%;
   max-width: 100%;
   display: none;
+  background-color: transparent;
 }
 .nav-link:hover {
   color: white;
 }
 #footer {
   background-color: #17191f;
-  /* width: 100%; */
 }
 input {
   outline: 0;
@@ -43,10 +43,9 @@ input {
 
 #separator {
   width: 1px;
-  /* height: 124px; */
-  /* margin-top: 0; */
-  /* margin-right: 20px; */
-  /* margin-bottom: 0; */
+}
+#browser-box:hover {
+  background-color: rgba(255, 255, 255, 0.04);
 }
 /* svg  */
 svg {

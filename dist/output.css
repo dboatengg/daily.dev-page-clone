@@ -645,11 +645,6 @@ video {
   margin-bottom: 80px;
 }
 
-.my-\[100px\] {
-  margin-top: 100px;
-  margin-bottom: 100px;
-}
-
 .mx-\[8px\] {
   margin-left: 8px;
   margin-right: 8px;
@@ -675,12 +670,12 @@ video {
   margin-top: 1.25rem;
 }
 
-.mb-\[110px\] {
-  margin-bottom: 110px;
-}
-
 .mb-\[30px\] {
   margin-bottom: 30px;
+}
+
+.mt-\[80px\] {
+  margin-top: 80px;
 }
 
 .mb-\[10px\] {
@@ -689,10 +684,6 @@ video {
 
 .mt-\[10px\] {
   margin-top: 10px;
-}
-
-.mt-\[80px\] {
-  margin-top: 80px;
 }
 
 .mb-\[24px\] {
@@ -888,6 +879,14 @@ video {
   row-gap: 20px;
 }
 
+.gap-y-\[200px\] {
+  row-gap: 200px;
+}
+
+.gap-y-\[30px\] {
+  row-gap: 30px;
+}
+
 .space-y-5 > :not([hidden]) ~ :not([hidden]) {
   --tw-space-y-reverse: 0;
   margin-top: calc(1.25rem * calc(1 - var(--tw-space-y-reverse)));
@@ -991,6 +990,11 @@ video {
   padding-right: 24px;
 }
 
+.py-\[80px\] {
+  padding-top: 80px;
+  padding-bottom: 80px;
+}
+
 .py-\[40px\] {
   padding-top: 40px;
   padding-bottom: 40px;
@@ -1046,16 +1050,24 @@ video {
   padding-left: 20px;
 }
 
+.pb-\[80px\] {
+  padding-bottom: 80px;
+}
+
+.pt-\[80px\] {
+  padding-top: 80px;
+}
+
+.pb-\[40px\] {
+  padding-bottom: 40px;
+}
+
 .pr-\[40px\] {
   padding-right: 40px;
 }
 
 .pl-\[24px\] {
   padding-left: 24px;
-}
-
-.pt-\[80px\] {
-  padding-top: 80px;
 }
 
 .pb-\[20px\] {
@@ -1207,7 +1219,7 @@ video {
 
 #nav {
   z-index: 99999;
-  transition: 1s ease-in-out;
+  transition: 0.3s ease-in-out;
 }
 
 .hamburger {
@@ -1216,6 +1228,7 @@ video {
   max-height: 100%;
   max-width: 100%;
   display: none;
+  background-color: transparent;
 }
 
 .nav-link:hover {
@@ -1224,7 +1237,6 @@ video {
 
 #footer {
   background-color: #17191f;
-  /* width: 100%; */
 }
 
 input {
@@ -1253,10 +1265,10 @@ input {
 
 #separator {
   width: 1px;
-  /* height: 124px; */
-  /* margin-top: 0; */
-  /* margin-right: 20px; */
-  /* margin-bottom: 0; */
+}
+
+#browser-box:hover {
+  background-color: rgba(255, 255, 255, 0.04);
 }
 
 /* svg  */
@@ -1544,8 +1556,8 @@ svg path:hover {
     max-width: 480px;
   }
 
-  .md\:max-w-\[45\%\] {
-    max-width: 45%;
+  .md\:max-w-\[55\%\] {
+    max-width: 55%;
   }
 
   .md\:cursor-pointer {

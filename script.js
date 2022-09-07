@@ -22,10 +22,10 @@ hamburger.addEventListener("click", () => {
   navMenu.classList.toggle("active");
 
   // toggle background color of hamburger
-  if (hamburger.style.backgroundColor === "grey") {
-    hamburger.style.backgroundColor = "transparent";
+  if (hamburger.style.backgroundColor === "transparent") {
+    hamburger.style.backgroundColor = "#ffffff0a";
   } else {
-    hamburger.style.backgroundColor = "grey";
+    hamburger.style.backgroundColor = "#ffffff0a";
   }
 });
 //remove nav-menu when user clicks on main section
