@@ -16,8 +16,5 @@ This is a cloned website project of the landing page of daily.dev.
 ## Deployment
 - Neflify
 
-## Note
-- This project is currently under construction.
-
 ## License
 This project is open source and available under the [MIT License](LICENSE.md).
